@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDE8E110-1673-479E-BD2F-FEBED29528F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Travel_Agency_Project</RootNamespace>
+    <AssemblyName>Travel_Agency_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.2.5, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.2.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddTourPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTourPackage.Designer.cs">
+      <DependentUpon>AddTourPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_DashBoard.Designer.cs">
+      <DependentUpon>Admin_DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.Designer.cs">
+      <DependentUpon>Admin_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Give_Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Give_Feedback.Designer.cs">
+      <DependentUpon>Give_Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Select_Hotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Hotel.Designer.cs">
+      <DependentUpon>Select_Hotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Transport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Transport.Designer.cs">
+      <DependentUpon>Select_Transport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Your_Package_Tour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Your_Package_Tour.Designer.cs">
+      <DependentUpon>Select_Your_Package_Tour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Travel_AgencyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Travel_AgencyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Travel_AgencyDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Travel_AgencyDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Travel_AgencyDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Travel_AgencyDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Travel_AgencyDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Travel_AgencyDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_DashBoard.Designer.cs">
+      <DependentUpon>User_DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUserDetails.Designer.cs">
+      <DependentUpon>ViewUserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Booking_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Booking_Details.Designer.cs">
+      <DependentUpon>View_Booking_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_FeedBack.Designer.cs">
+      <DependentUpon>View_FeedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Package_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Package_Details.Designer.cs">
+      <DependentUpon>View_Package_Details.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddTourPackage.resx">
+      <DependentUpon>AddTourPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_DashBoard.resx">
+      <DependentUpon>Admin_DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Login.resx">
+      <DependentUpon>Admin_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Give_Feedback.resx">
+      <DependentUpon>Give_Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Select_Hotel.resx">
+      <DependentUpon>Select_Hotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Transport.resx">
+      <DependentUpon>Select_Transport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Your_Package_Tour.resx">
+      <DependentUpon>Select_Your_Package_Tour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_DashBoard.resx">
+      <DependentUpon>User_DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUserDetails.resx">
+      <DependentUpon>ViewUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Booking_Details.resx">
+      <DependentUpon>View_Booking_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_FeedBack.resx">
+      <DependentUpon>View_FeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Package_Details.resx">
+      <DependentUpon>View_Package_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Travel_AgencyDataSet.xsc">
+      <DependentUpon>Travel_AgencyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Travel_AgencyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Travel_AgencyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Travel_AgencyDataSet.xss">
+      <DependentUpon>Travel_AgencyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Travel_AgencyDataSet1.xsc">
+      <DependentUpon>Travel_AgencyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Travel_AgencyDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Travel_AgencyDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Travel_AgencyDataSet1.xss">
+      <DependentUpon>Travel_AgencyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Travel_AgencyDataSet2.xsc">
+      <DependentUpon>Travel_AgencyDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Travel_AgencyDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Travel_AgencyDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Travel_AgencyDataSet2.xss">
+      <DependentUpon>Travel_AgencyDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Travel_AgencyDataSet3.xsc">
+      <DependentUpon>Travel_AgencyDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Travel_AgencyDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Travel_AgencyDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Travel_AgencyDataSet3.xss">
+      <DependentUpon>Travel_AgencyDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inked25827782_LI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inked25827782LI150x150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download40x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6145740x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-994605.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-fabian-wiktor-994605.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Himchori Beach at Cox%27sBazar District.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Himchori Beach at Cox%27sBazar District1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Himchori Beach at Cox%27sBazar District2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\141856.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1418561.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\141856 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\141856 - Copy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-618533326-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\london-paris-train-bus-plane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transportation-concept-hand-drawing-bus-ship-airplane-chalkboard-background-89662058.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transportation-concept-hand-drawing-bus-ship-airplane-chalkboard-background-89662058 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane5772311c3df78cb62c2109e0250x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scaniabus4250x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trains250x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScaniaInterlinkMD250x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\261805173_456626885801085_854872466564808919_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\247068465_284816416704900_1700602870131152108_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\262512760308637667783152234393074461127770n250x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bali-Dynasty-Resort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bali-Dynasty-Resort1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single256x227.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto1061316090170667a256x227.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotelbelairpresidentialsuitelivingroom256x227.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_waters_of_Pangong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d8911afd06fc4490fa682e577dcb1abf184x113.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alessio-lin-2n1SciGY5dI-unsplash-cópia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GettyImages-1154092756-e31f198466e443018b44a088ead1250b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masumiheadwearamazonpay245x199.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\068BjcjwBw0snwHIq0KNo5m15v1602794215245x199.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GooglePayLockupmax1200x1200245x199.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\449940logouticonpngblackpowerbuttontransparentpng69x50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-traveler-booking-journey-sojern.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedback-concept-image-arrows-blue-chalkboard-background-40378284.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
